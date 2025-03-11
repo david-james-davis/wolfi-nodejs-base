@@ -18,7 +18,7 @@ jobs:
 
       - name: Build and Tag Image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/wolfi-nodejs:21 .
+          docker build -t ghcr.io/${{ github.actor }}/wolfi-nodejs:21 .
 
       - name: Push Image to GHCR
         run: |
